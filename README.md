@@ -1,6 +1,8 @@
 # Item Response Theoy Tree Model (IR-tree) and Generalized Graded Unfolding Model(GUMM)
 A hybird model is combined with an IR-tree and a GUMM.
+
 Files: 
+
 GGUM-tree.R: using the estimated paramters from the GGUM-tree model to plot the item response surface plot.
 
 ESS_GUMM.R: creating two functions for cleaning data and fitting the GGUM model by using the “GGUM” package in R.
