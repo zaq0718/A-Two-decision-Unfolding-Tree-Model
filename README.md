@@ -1,5 +1,5 @@
 # Item Response Theoy Tree Model (IR-tree) and Generalized Graded Unfolding Model(GUMM)
-A hybird model is combined with IR-tee and GUMM.
+A hybird model is combined with an IR-tree and a GUMM.
 
 References: 
 Bockenholt, U. (2012). Modeling multiple response processes in judgment and choice. Psychological Methods, 17, 665-678.
