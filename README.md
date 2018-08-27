@@ -1,5 +1,5 @@
-# Item Response Theoy Tree Model (IR-tree) and Generalized Graded Unfolding Model(GUMM)
-A hybird model is combined with an IR-tree and a GUMM.
+# Item Response Theoy Tree Model (IR-tree) and Generalized Graded Unfolding Model(GGUM)
+A hybird model is combined with an IR-tree and a GGUM.
 
 Files: 
 
