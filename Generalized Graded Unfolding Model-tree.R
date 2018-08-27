@@ -47,3 +47,24 @@ for (i in 1:people)
 
 expected<-NULL
 expected<-1*(P[,,1])+2*(P[,,2])+3*(P[,,3])+4*(P[,,4])+5*P[,,5]
+
+###Plot a 2-dimensional item response surface
+library(scatterplot3d)
+final<-cbind(theta,eta,expected)
+colnames(final)<-c("theta","eta","I1","I2","I3","I4","I5","I6","I7","I8","I9","I10","I11")
+par(mfrow=c(2,3))
+for(i in 9:13)
+{ 
+  scatterplot3d(final[,1],final[,2],final[,i],highlight.3d = T,xlim=c(-3,3),ylim=c(-3,3),zlim=c(1,5),
+                xlab=expression(theta),ylab="",zlab=expression(paste("E","(","X",")")),main=paste("Item",i-2),
+                grid=FALSE)
+  dims <- par("usr")
+  x <- dims[1]+ 0.9*diff(dims[1:2])
+  y <- dims[3]+ 0.1*diff(dims[1:2])
+  text(x,y,expression(gamma),srt=45)
+}
+
+
+plot_ly(as.data.frame(final), x = final[,1], y =final[,2], z = final[,9]) %>%
+  add_markers()%>%layout(scene=list(xaxis = list(range = c(-3,3)),yaxis = list(range = c(-3,3)),
+                                    zaxis=list(range = c(1,5))))
