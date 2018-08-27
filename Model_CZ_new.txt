@@ -1,0 +1,44 @@
+model {
+for (i in 1:people) 
+{
+theta[i] ~ dnorm(0, 1)
+eta[i] ~ dnorm(0, 1)
+for (j in 1:itemnum) 
+{
+num[i,j,1] <- 1
+num[i,j,2] <- exp(alpha[j]*(1*(theta[i]-delta[j]) - tau[j,1]))
+num[i,j,3] <- exp(alpha[j]*(2*(theta[i]-delta[j]) - tau[j,1] - tau[j,2]))
+num[i,j,4] <- exp(alpha[j]*(3*(theta[i]-delta[j]) - tau[j,1] - tau[j,2]))
+num[i,j,5] <- exp(alpha[j]*(4*(theta[i]-delta[j]) - tau[j,1]))
+num[i,j,6] <- exp(alpha[j]*(5*(theta[i]-delta[j])))
+denom[i,j] <- sum(num[i,j,])
+
+logit(D[i,j]) <- beta[j]*(eta[i] - xi[j])
+
+P[i,j,1] <- ((num[i,j,1]+num[i,j,6])/denom[i,j])*D[i,j]
+P[i,j,2] <- ((num[i,j,1]+num[i,j,6])/denom[i,j])*(1-D[i,j])
+P[i,j,3] <- (num[i,j,2]+num[i,j,5])/denom[i,j]
+P[i,j,4] <- ((num[i,j,3]+num[i,j,4])/denom[i,j])*(1-D[i,j])
+P[i,j,5] <- ((num[i,j,3]+num[i,j,4])/denom[i,j])*D[i,j]
+
+response[i,j] ~ dcat(P[i,j,])
+}
+}
+
+for (j in 1:itemnum) 
+{
+alpha[j] ~ dlnorm(0, 0.1)
+delta[j] ~ dnorm(0, 0.1)
+beta[j] ~ dlnorm(0, 0.1)
+xi[j]~ dnorm(0, 0.1)
+}
+for (j in 1:itemnum) 
+{
+tau[j,1] ~ dnorm(-1, 0.1)
+}
+for (j in 1:itemnum) 
+{
+tau[j,2] ~ dnorm(-1, 0.1)
+}
+}
+
