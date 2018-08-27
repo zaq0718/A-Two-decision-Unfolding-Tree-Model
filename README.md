@@ -13,6 +13,7 @@ Model_CZ_new.txt: the GGUM-tree model for Winbugs.
 
 
 References: 
+
 Bockenholt, U. (2012). Modeling multiple response processes in judgment and choice. Psychological Methods, 17, 665-678.
 
 Roberts, J. S., Donoghue, J. R., & Laughlin, J. E. (2000). A general item response theory model for unfolding unidimensional polytomous responses. Applied Psychological Measurement, 24, 3-32.
