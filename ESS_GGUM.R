@@ -1,7 +1,7 @@
 library(foreign)
 library(GGUM)
 library(dplyr)
-setwd("C:\\Users\\yijhenwu\\Dropbox\\Future Research\\Response Style\\Data\\ESS")
+setwd("~\\Dropbox\\Future Research\\Response Style\\Data\\ESS")
 data<-read.spss("ESS8e01_1.sav",use.value.labels =F,to.data.frame = T)
 CNT<-c(levels(data$cntry))
 
@@ -48,5 +48,5 @@ for(i in 1:ncol(data))
 }
 }
 
-CH<-analysis(path="C:\\Users\\yijhenwu\\Dropbox\\Future Research\\Response Style\\Data\\ESS\\CH",
+CH<-analysis(path="~\\Dropbox\\Future Research\\Response Style\\Data\\ESS\\CH",
              data = all[["CH"]],num_c=2) ## an example
