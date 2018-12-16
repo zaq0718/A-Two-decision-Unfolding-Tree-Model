@@ -1,13 +1,13 @@
-# Item Response Theory Tree Model (IR-tree) and Generalized Graded Unfolding Model(GGUM)
-A hybird model is combined with an IR-tree and a GGUM.
+# Item Response Theory Tree Model (IRtree) and Generalized Graded Unfolding Model(GGUM)
+A hybird model is combined with an IRtree and a GGUM.
 
 Files: 
 
-GGUM-tree.R: using the estimated paramters from the GGUM-tree model to plot the item response surface plot.
+GGUM-tree.R: using the estimated paramters from the GGUM-tree model to plot the 3-D item response surface plot.
 
 ESS_GUMM.R: creating two functions for cleaning data and fitting the GGUM model by using the “GGUM” package in R.
 
-ESS_CZ_Winbugs.R: fitting the GGUM-tree model with Winbugs in an R environment.
+ESS_CZ_Winbugs.R: fitting the GGUM-tree model with Winbugs under an R environment.
 
 Model_CZ_new.txt: the GGUM-tree model for Winbugs.
 
