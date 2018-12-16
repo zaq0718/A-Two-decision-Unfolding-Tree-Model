@@ -1,4 +1,4 @@
-# Item Response Theory Tree Model (IRtree) and Generalized Graded Unfolding Model(GGUM)
+# Tree-based Item Response Theory Model (IRtree) and Generalized Graded Unfolding Model(GGUM)
 A hybird model is combined with an IRtree and a GGUM.
 
 Files: 
