@@ -1,4 +1,4 @@
-# Tree-based Item Response Theory Model (IRtree) and Generalized Graded Unfolding Model(GGUM)
+# A-Two-decision-Unfolding-Tree-Model
 **Purpose** :This project aims to extend an item response tree model (i.e. multiple -response processes model) thereby incorporating the concept of "an ideal point process". To demonstrate the application of the proposed model, the attitude toward welfare state policies in the 2016 European Social Survey was applied. 
 
 **Data**: The 2016 European Social Survey can be download [THE EUROPEAN SOCIAL SURVEY] (https://www.europeansocialsurvey.org/)
