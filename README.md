@@ -3,7 +3,7 @@
 
 **Data**: The 2016 European Social Survey can be downloaded here: [THE EUROPEAN SOCIAL SURVEY](https://www.europeansocialsurvey.org/)
 
-**Codes**: 
+**Code**: 
 1. ESS_GUMM.R: creating two functions for cleaning data and fitting the GGUM model by using the “GGUM” package in R.
 2. ESS_CZ_Winbugs.R: fitting the GGUM-tree model with Winbugs under an R environment.
 3. GGUM-tree.R: using the estimated paramters from the GGUM-tree model to plot the 3-D item response surface plot.
