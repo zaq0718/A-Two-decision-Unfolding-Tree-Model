@@ -1,4 +1,3 @@
-# A-Two-decision-Unfolding-Tree-Model
 **Purpose** :This project aims to extend an item response tree model (i.e. multiple -response processes model) thereby incorporating the concept of "an ideal point process". To demonstrate the application of the proposed model, the attitude toward welfare state policies in the 2016 European Social Survey was applied. 
 
 **Data**: The 2016 European Social Survey can be downloaded here: [THE EUROPEAN SOCIAL SURVEY](https://www.europeansocialsurvey.org/)
@@ -11,8 +10,10 @@
 
 **References**: 
 
-1. Bockenholt, U. (2012). Modeling multiple response processes in judgment and choice. Psychological Methods, 17, 665-678.
+1. Bockenholt, U. (2012). Modeling multiple response processes in judgment and choice. 
+   Psychological Methods, 17, 665-678.
 2. Roberts, J. S., Donoghue, J. R., & Laughlin, J. E. (2000). A general item response theory model for unfolding unidimensional polytomous    responses. Applied Psychological Measurement, 24, 3-32.
-3. Thissen-Roe, A., & Thissen, D. (2013). A two-decision model for responses to Likert-type items. Journal of Educational and Behavioral      Statistics, 38, 522-547.
+3. Thissen-Roe, A., & Thissen, D. (2013). A two-decision model for responses to Likert-type items. 
+   Journal of Educational and Behavioral      Statistics, 38, 522-547.
 
 
