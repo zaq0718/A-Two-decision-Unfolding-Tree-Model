@@ -7,6 +7,7 @@
 2. ESS_CZ_Winbugs.R: fitting the GGUM-tree model with Winbugs under an R environment.
 3. GGUM-tree.R: using the estimated paramters from the GGUM-tree model to plot the 3-D item response surface plot.
 4. Model_CZ_new.txt: the GGUM-tree model for Winbugs.
+5. Codes for running simulated data.R: codes for fitting 20 simulated datasets. 
 
 **References**: 
 
